@@ -1,0 +1,42 @@
+<html>
+    <title>
+        Happy Birthday Sejal
+    </title>
+
+    <body style = "background-color: yellow; ">
+        
+        <div style = "text-align: center;">
+            <img src = "pp.jpg" width="400" height="450" style="border : 5px solid red;">
+        </div>
+        <div id = "bl" style = "color: red; position: absolute; left: 20; top: 50; border : 5px solid red; padding: 10px;">
+            Happy Birthday Sejal ❤️,<br>
+            May god bless you a very long life 😇, <br>
+            Always be talkative and charming as you are now... <br>
+            And be as such pure hearted and my best friend 😍
+        </div>
+
+        <audio id = "song1" controls autoplay>
+            <source src = "song.mp3" type="audio/mpeg">
+        </audio>
+
+        <script>
+            
+            function call1(){
+            let bl = document.getElementById("bl");
+            let id = setInterval(frame, 10);
+            let pos = 0;
+            function frame() {
+            if (pos == 350) {
+            pos = 0;
+            } else {
+            pos++;
+            bl.style.top = pos + 'px';
+            }
+            }
+        }
+        call1();
+        </script>
+
+
+    </body>
+</html>
