@@ -43,7 +43,7 @@ nav {
 .block {
   background-color: darkturquoise;
   text-decoration: none;
-  width: 500px;
+  width: fit-content;
   padding: 23px;
   margin: auto;
   color: white;
