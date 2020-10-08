@@ -1,58 +1,67 @@
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>Employee Details</title>
+    <title>Employee Details</title>
 
-        <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="nav.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Provide Details</h1>
+    </header>
 
-    </head>
-    <body style="text-align: center;">
-        <header >
-            <h1>Provide Details</h1>
-        </header>
+    <nav>
+      <ul>
+        <li title="Home">
+          <a href="index.html"><img src="images/home.png" alt="Home" /></a>
+        </li>
+        <li title="Contact us">
+          <a href="contactus.html"
+            ><img src="images/contact.png" alt="Contact Us"
+          /></a>
+        </li>
+        <li title="About us">
+          <a href="aboutus.html"
+            ><img src="images/about.png" alt="About Us"
+          /></a>
+        </li>
+      </ul>
+    </nav>
 
-        <nav>
-            <ul>
-                <li title="Home">
-                    <a href="index.html"><img src="images/home.png" alt="Home"></a>
-                </li>
-                <li title="Contact us">
-                    <a href="contactus.html"><img src="images/contact.png" alt="Contact Us" ></a>
-                </li>
-                <li title="About us">
-                    <a href="aboutus.html"><img src="images/about.png" alt="About Us" ></a>
-                </li>
-            </ul>
-        </nav>
+    <main>
+      <article style="color: white">
+        <h2>Form Details</h2>
+        <p>This form is generally for the Employee's Details</p>
+      </article>
+      <div>
+        <form action="#" method="post">
+          Name : <input type="text" placeholder="Your Good name" /><br /><br />
+          Email id :
+          <input
+            type="email"
+            name=""
+            id=""
+            placeholder="ex@gmail.com"
+          /><br /><br />
+          Gender <input type="radio" name="male" id="" /> Male
+          <input type="radio" name="female" id="" /> Female <br /><br />
+          Qualification : <br /><input type="checkbox" name="" id="" />10 <br />
+          <input type="checkbox" name="" id="" />12 <br />
+          <input type="checkbox" name="" id="" /> UG <br />
+          <input type="checkbox" name="" id="" /> PG <br /><br />
+          City :
+          <select name="" id="" style="text-align: right">
+            <option value="">Ghaziabad</option>
+            <option value="">Noida</option>
+            <option value="">Delhi</option>
+            <br /><br /></select
+          ><br /><br />
+          <button type="submit">Submit Form</button>
+        </form>
+      </div>
+    </main>
 
-        <main>
-            <article style="color: white;">
-                <h2 >Form Details</h2>
-                <p >This form is generally for the Employee's Details</p>
-            </article>
-            <div style="background-color: turquoise; width: 500px; padding: 23px; margin: auto; color: teal;">
-                <form action="#" method="post">
-                    Name : <input type="text" placeholder="Your Good name"><br><br>
-                    Email id : <input type="email" name="" id="" placeholder="ex@gmail.com"><br><br>
-                    Gender : <input type="radio" name="male" id=""> Male
-                    <input type="radio" name="female" id=""> Female <br><br>
-                    Qualification : <input type="checkbox" name="" id="">10 <br>
-                    <input type="checkbox" name="" id="">12 <br>
-                    <input type="checkbox" name="" id=""> UG <br>
-                    <input type="checkbox" name="" id=""> PG <br><br>
-                    City : <select name="" id="" style="text-align: right">
-                        <option value="">Ghaziabad</option>
-                        <option value="">Noida</option>
-                        <option value="">Delhi</option> <br><br>
-                        <button type="submit"></button>
-                    </select>
-                </form>
-            </div>
-        </main>
-
-        <footer style="color: white;">
-            &copy;Shivam Kumar
-        </footer>
-    </body>
+    <footer style="color: white">&copy;Shivam Kumar</footer>
+  </body>
 </html>
