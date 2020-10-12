@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Example</title>
+    <style>
+        button {
+            border: solid white 5px;
+            background-color: cyan;
+            padding: 5px;
+        }
+
+        button:hover {
+            background-color: green;
+        }
+    </style>
+    <script>
+        function formData() {
+            let fName = document.getElementById("fName").value,
+                lName = document.getElementById("lName").value,
+                mail = document.getElementById("mail").value,
+                query = document.getElementById("query").value;
+
+                if(fName === "")
+                    alert("Enter your First Name");
+                else if(lName === "")
+                    alert("Enter your Last Name");
+                else if(mail === "")
+                    alert("Enter your Mail Id");
+                else if(query === "")
+                    alert("Your Query is Valuable");
+                else {
+                    let str = `Full Name : ${fName} ${lName} \nMail Id : ${mail} \nQuery : ${query}`;
+                    alert(str);
+                }
+        
+        }
+    </script>
+</head>
+<body style="background-color: bisque;">
+    <div style="padding: 25px; background-color: cadetblue; border: solid white 5px; width: fit-content; margin-top: 10%; margin-left: 35%;">
+        <form action="">
+            <input type="text" id="fName" placeholder="First Name"><br><br>
+            <input type="text" id="lName" placeholder="Last Name"><br><br>
+            <input type="email" id="mail" placeholder="Email Id"><br><br>
+            <textarea name="" id="query" cols="30" rows="10" placeholder="Query"></textarea><br><br>
+            <button type="submit" onclick="formData()" style="width: 100%;">Submit Form</button>
+        </form>
+    </div>
+</body>
+</html>
